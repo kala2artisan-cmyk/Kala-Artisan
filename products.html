@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Premium Jams and Honey - Kala Artisan">
+    <title>Our Products | Kala Artisan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#2F4F4F',
+                            gold: '#C5A065',
+                            cream: '#FDFCF5',
+                            accent: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-brand-cream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation (Identical to other pages) -->
+    <header class="bg-brand-cream sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="font-serif text-3xl font-bold text-brand-green tracking-wide hover:text-brand-gold transition-colors duration-300">
+                KALA ARTISAN
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="text-brand-green hover:text-brand-gold font-medium transition-colors">Home</a>
+                <a href="about.html" class="text-brand-green hover:text-brand-gold font-medium transition-colors">About
+                    Us</a>
+                <a href="products.html"
+                    class="text-brand-green text-brand-gold font-bold transition-colors">Products</a>
+                <a href="art.html" class="text-brand-green hover:text-brand-gold font-medium transition-colors">Art &
+                    Creations</a>
+                <a href="sustainability.html"
+                    class="text-brand-green hover:text-brand-gold font-medium transition-colors">Sustainability</a>
+                <a href="contact.html"
+                    class="px-5 py-2 bg-brand-green text-white rounded-full hover:bg-brand-gold transition-colors duration-300 shadow-md transform hover:-translate-y-0.5 font-medium">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-brand-green focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-brand-cream border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block text-brand-green hover:text-brand-gold font-medium">Home</a>
+                <a href="about.html" class="block text-brand-green hover:text-brand-gold font-medium">About Us</a>
+                <a href="products.html" class="block text-brand-gold font-bold">Products</a>
+                <a href="art.html" class="block text-brand-green hover:text-brand-gold font-medium">Art & Creations</a>
+                <a href="sustainability.html"
+                    class="block text-brand-green hover:text-brand-gold font-medium">Sustainability</a>
+                <a href="contact.html"
+                    class="block px-5 py-2 bg-brand-green text-center text-white rounded hover:bg-brand-gold transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="bg-brand-green text-white py-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Pantry</h1>
+            <p class="text-lg md:text-xl font-light text-brand-gold max-w-2xl mx-auto">Handcrafted, small-batch, and
+                purely authentic.</p>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="py-16 container mx-auto px-6">
+
+            <!-- Filters (Visual only for now) -->
+            <div class="flex justify-center mb-12 space-x-4 fade-in">
+                <button class="text-brand-green font-bold border-b-2 border-brand-gold pb-1">All</button>
+                <button class="text-gray-500 hover:text-brand-green transition-colors pb-1">Jams & Spreads</button>
+                <button class="text-gray-500 hover:text-brand-green transition-colors pb-1">Honey</button>
+                <button class="text-gray-500 hover:text-brand-green transition-colors pb-1">Beverages</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Honey (Featured) -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden">
+                        <img src="images/wild-bee-honey.jpg" alt="Honey" class="w-full h-full object-cover">
+                        <span
+                            class="absolute top-4 right-4 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">Bestseller</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-green mb-2">Wild Bee Honey</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Pure, clean-label honey harvested from
+                            local forests. Our most popular product, known for its rich texture and natural sweetness.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-brand-green font-bold">180ml / 350ml</span>
+                            <a href="contact.html"
+                                class="text-brand-gold font-bold hover:text-brand-green transition-colors text-sm uppercase">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passion Fruit Jam -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden">
+                        <img src="images/passion-fruit-jam.jpg" alt="Passion Fruit Jam"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-green mb-2">Passion Fruit Jam</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Captured from the heart of the tropics. A
+                            vibrant, tangy jam made with fresh passion fruit pulp and seeds.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-brand-green font-bold">Small Batch</span>
+                            <a href="contact.html"
+                                class="text-brand-gold font-bold hover:text-brand-green transition-colors text-sm uppercase">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wood Apple Jam -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden">
+                        <!-- Placeholder Color Block -->
+                        <img src="images/wood-apple-jam.jpg" alt="Wood Apple Jam" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-green mb-2">Wood Apple Jam</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">A uniquely Sri Lankan delicacy. The
+                            robust, earthy flavor of wood apple crafted into a smooth, delightful jam.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-brand-green font-bold">Seasonal</span>
+                            <a href="contact.html"
+                                class="text-brand-gold font-bold hover:text-brand-green transition-colors text-sm uppercase">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strawberry Jam -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden">
+                        <img src="images/strawberry-jam.jpg" alt="Strawberry Jam" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-green mb-2">Strawberry Jam</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Classic favorite made with real, ripe
+                            strawberries. Perfect for your morning toast or desserts.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-brand-green font-bold">Classic</span>
+                            <a href="contact.html"
+                                class="text-brand-gold font-bold hover:text-brand-green transition-colors text-sm uppercase">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soursop Spread -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden">
+                        <img src="images/soursop-spread.jpg" alt="Soursop Spread" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-green mb-2">Soursop Spread</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Creamy and exotic. The distinctive taste
+                            of soursop turned into a luscious spread.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-brand-green font-bold">Exotic</span>
+                            <a href="contact.html"
+                                class="text-brand-gold font-bold hover:text-brand-green transition-colors text-sm uppercase">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tamarind Drink -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="h-64 bg-gray-100 relative overflow-hidden">
+                        <img src="images/tamarind-drink.jpg" alt="Tamarind Drink" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-brand-green mb-2">Tamarind Drink</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Refreshingly tart and sweet. A traditional
+                            cooling drink perfect for warm days.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-brand-green font-bold">Refreshing</span>
+                            <a href="contact.html"
+                                class="text-brand-gold font-bold hover:text-brand-green transition-colors text-sm uppercase">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Identical) -->
+    <footer class="bg-brand-green text-white pt-16 pb-8 border-t border-gray-700">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-1 md:col-span-1">
+                <a href="index.html" class="font-serif text-3xl font-bold text-white tracking-wide mb-6 block">KALA
+                    ARTISAN</a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">A women-led brand blending artisan foods with
+                    culture-inspired creations.</p>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl font-bold mb-6 text-brand-gold">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li><a href="about.html" class="hover:text-brand-gold transition-colors">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-brand-gold transition-colors">Shop Products</a></li>
+                    <li><a href="art.html" class="hover:text-brand-gold transition-colors">Art & Creations</a></li>
+                    <li><a href="sustainability.html" class="hover:text-brand-gold transition-colors">Sustainability</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl font-bold mb-6 text-brand-gold">Contact Us</h4>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="flex items-start"><span class="mr-3 text-brand-gold">📍</span><span>Pahala Vitiyala,
+                            Matara, Sri Lanka</span></li>
+                    <li class="flex items-center"><span class="mr-3 text-brand-gold">📧</span><a
+                            href="mailto:kalaartisanslk@gmail.com"
+                            class="hover:text-brand-gold">kalaartisanslk@gmail.com</a>
+                    </li>
+                    <li class="flex items-center"><span class="mr-3 text-brand-gold">📞</span><a href="tel:+94713651212"
+                            class="hover:text-brand-gold">+94 71 365 1212</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl font-bold mb-6 text-brand-gold">Stay Updated</h4>
+                <form class="flex flex-col space-y-3">
+                    <input type="email" placeholder="Your Email Address"
+                        class="px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded focus:outline-none focus:border-brand-gold text-sm placeholder-gray-500">
+                    <button type="submit"
+                        class="px-4 py-2 bg-brand-gold text-white font-bold rounded hover:bg-white hover:text-brand-green transition-colors text-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Kala Artisan. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Kala Artisan - Our Women-Led Heritage and Story">
+    <title>About Us | Kala Artisan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#2F4F4F',
+                            gold: '#C5A065',
+                            cream: '#FDFCF5',
+                            accent: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-brand-cream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="bg-brand-cream sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="font-serif text-3xl font-bold text-brand-green tracking-wide hover:text-brand-gold transition-colors duration-300">
+                KALA ARTISAN
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="text-brand-green hover:text-brand-gold font-medium transition-colors">Home</a>
+                <a href="about.html" class="text-brand-green text-brand-gold font-bold transition-colors">About Us</a>
+                <a href="products.html"
+                    class="text-brand-green hover:text-brand-gold font-medium transition-colors">Products</a>
+                <a href="art.html" class="text-brand-green hover:text-brand-gold font-medium transition-colors">Art &
+                    Creations</a>
+                <a href="sustainability.html"
+                    class="text-brand-green hover:text-brand-gold font-medium transition-colors">Sustainability</a>
+                <a href="contact.html"
+                    class="px-5 py-2 bg-brand-green text-white rounded-full hover:bg-brand-gold transition-colors duration-300 shadow-md transform hover:-translate-y-0.5 font-medium">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-brand-green focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-brand-cream border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html" class="block text-brand-green hover:text-brand-gold font-medium">Home</a>
+                <a href="about.html" class="block text-brand-gold font-bold">About Us</a>
+                <a href="products.html" class="block text-brand-green hover:text-brand-gold font-medium">Products</a>
+                <a href="art.html" class="block text-brand-green hover:text-brand-gold font-medium">Art & Creations</a>
+                <a href="sustainability.html"
+                    class="block text-brand-green hover:text-brand-gold font-medium">Sustainability</a>
+                <a href="contact.html"
+                    class="block px-5 py-2 bg-brand-green text-center text-white rounded hover:bg-brand-gold transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="bg-brand-green text-white py-20 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('images/hero-bg.jpg')] bg-cover bg-center opacity-20">
+            </div>
+            <div class="container mx-auto px-6 text-center relative z-10 fade-in">
+                <h1 class="text-5xl font-serif font-bold mb-4">Our Story</h1>
+                <p class="text-xl font-light text-brand-gold max-w-2xl mx-auto">Rooted in Heritage. Inspired by Nature.
+                    Driven by Passion.</p>
+            </div>
+        </section>
+
+        <!-- Founder Story -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center fade-in">
+                <div>
+                    <img src="images/founder.jpg" alt="Woman Artisan"
+                        class="rounded-lg shadow-xl w-full object-cover h-96">
+                </div>
+                <div>
+                    <h2 class="text-brand-gold font-serif text-2xl mb-2 italic">The Founder</h2>
+                    <h3 class="text-4xl font-serif font-bold text-brand-green mb-6">Sashikala Jayathunga</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Kala Artisan is a testament to the resilience and creativity of Sri Lankan women. Founded by
+                        Sashikala Jayathunga in the lush village of Pahala Vitiyala, Matara, what began as a small
+                        homemade jam kitchen has blossomed into a brand that celebrates the rich flavors and artistic
+                        heritage of the South.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Driven by a love for pure ingredients and traditional recipes, Sashikala insists on maintaining
+                        the integrity of every jar—handmade, small-batch, and authentically Sri Lankan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artistic Heritage -->
+        <section class="py-20 bg-brand-cream">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center fade-in">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-brand-gold font-serif text-2xl mb-2 italic">A Legacy of Art</h2>
+                    <h3 class="text-4xl font-serif font-bold text-brand-green mb-6">Inspired by Mastery</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Creativity runs deep in the Kala Artisan family. Sashikala’s father, <strong>Sunil
+                            Jayathunga</strong>, is a renowned <em>Kala Vibushana</em> award-winning artist and a
+                        beloved former art teacher at Matara Rahula College and Matara Central College.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        His lifelong dedication to art and culture serves as the guiding inspiration for the brand. It
+                        is this unique blend of culinary expertise and artistic vision that sets Kala Artisan
+                        apart—where every product is not just food, but a piece of culture.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="images/art-heritage.jpg" alt="Artistic Heritage"
+                        class="rounded-lg shadow-xl w-full object-cover h-96">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center max-w-4xl fade-in">
+                <h2 class="text-4xl font-serif font-bold text-brand-green mb-12">Our Purpose</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-4xl mb-4 text-brand-gold">🌿</div>
+                        <h4 class="font-serif font-bold text-xl mb-4 text-brand-green">Sustainability</h4>
+                        <p class="text-gray-600 text-sm">To source responsibly and minimize our environmental footprint
+                            through eco-friendly practices.</p>
+                    </div>
+                    <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-4xl mb-4 text-brand-gold">👩‍🎨</div>
+                        <h4 class="font-serif font-bold text-xl mb-4 text-brand-green">Empowerment</h4>
+                        <p class="text-gray-600 text-sm">To champion women-led entrepreneurship and support local
+                            farming communities in Matara.</p>
+                    </div>
+                    <div class="p-8 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-4xl mb-4 text-brand-gold">🍯</div>
+                        <h4 class="font-serif font-bold text-xl mb-4 text-brand-green">Authenticity</h4>
+                        <p class="text-gray-600 text-sm">To preserve the true taste of Sri Lankan fruits and the
+                            integrity of traditional art.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-green text-white pt-16 pb-8 border-t border-gray-700">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-1">
+                <a href="index.html" class="font-serif text-3xl font-bold text-white tracking-wide mb-6 block">KALA
+                    ARTISAN</a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">A women-led brand blending artisan foods with
+                    culture-inspired creations from the heart of Sri Lanka.</p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-serif text-xl font-bold mb-6 text-brand-gold">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li><a href="about.html" class="hover:text-brand-gold transition-colors">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-brand-gold transition-colors">Shop Products</a></li>
+                    <li><a href="art.html" class="hover:text-brand-gold transition-colors">Art & Creations</a></li>
+                    <li><a href="sustainability.html" class="hover:text-brand-gold transition-colors">Sustainability</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h4 class="font-serif text-xl font-bold mb-6 text-brand-gold">Contact Us</h4>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="flex items-start"><span class="mr-3 text-brand-gold">📍</span><span>Pahala Vitiyala,
+                            Matara, Sri Lanka</span></li>
+                    <li class="flex items-center"><span class="mr-3 text-brand-gold">📧</span><a
+                            href="mailto:kalaartisanslk@gmail.com"
+                            class="hover:text-brand-gold">kalaartisanslk@gmail.com</a>
+                    </li>
+                    <li class="flex items-center"><span class="mr-3 text-brand-gold">📞</span><a href="tel:+94713651212"
+                            class="hover:text-brand-gold">+94 71 365 1212</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter -->
+            <div>
+                <h4 class="font-serif text-xl font-bold mb-6 text-brand-gold">Stay Updated</h4>
+                <form class="flex flex-col space-y-3">
+                    <input type="email" placeholder="Your Email Address"
+                        class="px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded focus:outline-none focus:border-brand-gold text-sm placeholder-gray-500">
+                    <button type="submit"
+                        class="px-4 py-2 bg-brand-gold text-white font-bold rounded hover:bg-white hover:text-brand-green transition-colors text-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Kala Artisan. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
